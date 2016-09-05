@@ -17,17 +17,14 @@ main()
         {
             if (lml < caracteres[np])
             {
-                lml= caracteres[np];
-                pl = np;
+                
             }
             np++;
         }
 
         else
-        caracteres[np]++;
 
     }
-
 
     printf("Numero de palabra es: %d ",np - 1);
     printf("\n\n");
