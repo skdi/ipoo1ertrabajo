@@ -21,8 +21,9 @@ main(){
     for ( i = 0; i <= Tamano; i++)
     {
         if (frecuencia_caracteres[i] != 0 )
+            putchar(i);
     {
-    putchar(i);
+    
 
     for ( j = 1; j <= frecuencia_caracteres[i]; j++)
         printf("*");
