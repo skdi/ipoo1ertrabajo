@@ -22,7 +22,7 @@ main(){
     {
         if (frecuencia_caracteres[i] != 0 )
     {
-    putchar(s);
+    putchar(i);
 
     for ( j = 1; j <= frecuencia_caracteres[i]; j++)
         printf("*");
