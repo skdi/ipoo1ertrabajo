@@ -8,7 +8,7 @@ int main()
 
     while ( (c = getchar()) != EOF ){
 
-        if (' ' != c && '\t' != c){
+        if (c != ' ' && '\t' != '\t'){
 
             putchar(c);
             anterior = 'l';//1 toma el valor del caracter 1 para comparar
@@ -16,7 +16,7 @@ int main()
 
         if (' '== c){
 
-            if ('l'==anterior || '\t'==c){
+            if (anterior=='1' || c=='\t'){
                 printf(" ");
                 anterior = 'b';//b valor en blanco
                 }
