@@ -55,7 +55,7 @@ char invertido(char a[],int z,int i)
 
     char b[tamano(a)];
     if(i>=0){
-        b[z]=invertido(a[i-1],z+1,i-1);
+        b[z+1]=invertido(a[i-1],z+1,i-1);
         }
 
 }
