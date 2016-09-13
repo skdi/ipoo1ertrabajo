@@ -1,12 +1,31 @@
-//mayus en minus sin while if for
-//srtindex(s,t) recive str ,la cual retorna la posicion mas al final de t en s,sino encuentra t retornar  -1
-//escriba un programa que reciba "123.5e-6 y retorne su correspondiente en numero"
-//escriba una funciona recursiva que devuelva el string invertido. (no usar string.h)
-
-
-
 #include <stdio.h>
 #include <stdlib.h>
+
+
+int strindex(char c,char t)
+{
+    char e[100];
+    int i,j,aux=0;
+    for(i=0;i<=tamano(c)-1;i++){
+        if(c[i]==t)
+            e[j]=i;
+            j+=1;
+    }
+    return tamano(e);
+    return e[j];
+
+}
+
+
+
+
+
+float anumero()
+{
+    char s[100]="123.5";
+    printf("%2.6f",((float)atol(s))/pow(10,6));
+
+}
 
 
 char lower(char c)
@@ -19,39 +38,27 @@ char lower(char c)
 
 }
 
-
+//funcion auxiliar para el tamaño de una string
 char tamano(char a[])
 {
     //char *b[];
     int co;
     for(co=0;a[co]!='\0';co++)
     {
-
-        //*b[]=*a[];
-        //co+=1;
-
     }
-    /*for(i=0;i<contador;i++)
-    {
-        *a[i]=*b[contador-i];
-
-    }*/
     return co;
 
 }
 
-char invertido2(char a[])
+char invertido(char a[],int z,int i)
 {
-    int i=0;
-    while((a[tamano(a[])-i])>0){
-        a[i]=invertido2(a[tamano(a[])-i]);
-        i+=1;
-    }
 
+    char b[tamano(a)];
+    if(i>=0){
+        b[z]=invertido(a[i-1],z+1,i-1);
+        }
 
 }
-
-
 
 
 
@@ -59,14 +66,32 @@ char invertido2(char a[])
 
 main()
 {
-    char c;
+    int c;
+    char a[50];
+    int w=0;
+    int z=-1;
+    int i=tamano(a)-1;
     while((c=getchar())!= EOF)
     {
-        //lower(c);
-        //printf("%c",lower(c));
-        putchar(lower(c));
+
+        //****** llamada a lower
+        //putchar(lower(c));
+        //******* llamada a invertido
+        //a[w]=c;
+        //w++;
+
+
+
+
 
     }
+
+
+
+    //llamadas a funciones
+    //invertido(a,z,i);
+    //char letrarequerida='o';
+    //strindex(a,letrarequerida);
 
 
 
